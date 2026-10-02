@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @AllArgsConstructor
 @Data
 @NoArgsConstructor
@@ -12,7 +14,7 @@ public class ProductDTO {
     private Long id;
     private String name;
     private String description;
-    private Double price;
+    private BigDecimal price;
     private String imgUrl;
 
     public ProductDTO(Product entity){

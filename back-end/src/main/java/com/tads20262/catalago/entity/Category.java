@@ -21,17 +21,17 @@ public class Category
     private String name;
 
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-    private Instant creatAt;
+    private Instant created_At;
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-    private Instant updateAt;
+    private Instant updated_At;
     @PrePersist
     public void PrePersist(){
-        creatAt = Instant.now();
+        created_At = Instant.now();
     }
 
     @PreUpdate
     public void PreUpdate(){
-        updateAt = Instant.now();
+        updated_At = Instant.now();
     }
 
 
